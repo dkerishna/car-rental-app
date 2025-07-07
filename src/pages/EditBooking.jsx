@@ -21,7 +21,7 @@ export default function EditBooking() {
     function handleUpdate(updatedBooking) {
         axios
             .put(`https://be747605-0b85-4019-9dd2-b9cf3cd337c2-00-39np0mdq01620.pike.replit.dev/bookings/${id}`, updatedBooking)
-            .then(() => navigate("/"))
+            .then(() => navigate("/home"))
             .catch((err) => console.error("Update error:", err));
     }
 
