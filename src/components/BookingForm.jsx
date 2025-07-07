@@ -19,7 +19,7 @@ export default function BookingForm({ booking, onSubmit }) {
     const [cars, setCars] = useState([]);
 
     useEffect(() => {
-        fetch('https://be747605-0b85-4019-9dd2-b9cf3cd337c2-00-39np0mdq01620.pike.replit.dev/cars')
+        fetch('https://car-rental-api-eight.vercel.app/cars')
             .then((res) => res.json())
             .then(async (data) => {
                 // Map cars and attach image URLs

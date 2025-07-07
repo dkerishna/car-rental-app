@@ -18,7 +18,7 @@ export default function AddBooking() {
         console.log("Submitting booking:", bookingWithUser);
 
         axios
-            .post("https://be747605-0b85-4019-9dd2-b9cf3cd337c2-00-39np0mdq01620.pike.replit.dev/bookings", bookingWithUser)
+            .post("https://car-rental-api-eight.vercel.app/bookings", bookingWithUser)
             .then(() => navigate("/home"))
             .catch((err) => console.error("Error creating booking:", err));
     }

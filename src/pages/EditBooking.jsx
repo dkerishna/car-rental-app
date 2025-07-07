@@ -13,14 +13,14 @@ export default function EditBooking() {
     // Fetch the existing booking on run
     useEffect(() => {
         axios
-            .get(`https://be747605-0b85-4019-9dd2-b9cf3cd337c2-00-39np0mdq01620.pike.replit.dev/bookings/${id}`)
+            .get(`https://car-rental-api-eight.vercel.app/bookings/${id}`)
             .then((res) => setBooking(res.data))
             .catch((err) => console.error("Error loading booking:", err));
     }, [id]);
 
     function handleUpdate(updatedBooking) {
         axios
-            .put(`https://be747605-0b85-4019-9dd2-b9cf3cd337c2-00-39np0mdq01620.pike.replit.dev/bookings/${id}`, updatedBooking)
+            .put(`https://car-rental-api-eight.vercel.app/bookings/${id}`, updatedBooking)
             .then(() => navigate("/home"))
             .catch((err) => console.error("Update error:", err));
     }

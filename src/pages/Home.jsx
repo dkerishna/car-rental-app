@@ -16,8 +16,8 @@ export default function Home() {
         const isAdmin = currentUser.email === "admin@carrental.com";
 
         const endpoint = isAdmin
-            ? "https://be747605-0b85-4019-9dd2-b9cf3cd337c2-00-39np0mdq01620.pike.replit.dev/bookings"
-            : `https://be747605-0b85-4019-9dd2-b9cf3cd337c2-00-39np0mdq01620.pike.replit.dev/bookings?user_id=${currentUser.uid}`;
+            ? "https://car-rental-api-eight.vercel.app/bookings"
+            : `https://car-rental-api-eight.vercel.app/bookings?user_id=${currentUser.uid}`;
 
         fetch(endpoint)
             .then((res) => res.json())
@@ -51,7 +51,7 @@ export default function Home() {
     // Delete booking from API and local state
     function deleteBooking(id) {
         axios
-            .delete(`https://be747605-0b85-4019-9dd2-b9cf3cd337c2-00-39np0mdq01620.pike.replit.dev/bookings/${id}`)
+            .delete(`https://car-rental-api-eight.vercel.app/bookings/${id}`)
             .then(() => setBookings((prev) => prev.filter((b) => b.id !== id)))
             .catch((err) => console.error("Error deleting booking:", err));
     }
