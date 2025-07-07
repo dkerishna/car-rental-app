@@ -24,7 +24,7 @@ export default function Signup() {
 
         try {
             await createUserWithEmailAndPassword(auth, form.email, form.password);
-            navigate("/");
+            navigate("/home");
         } catch (err) {
             console.error("Signup error:", err.message);
             setError("Failed to sign up. " + err.message);
