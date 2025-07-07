@@ -20,7 +20,7 @@ export default function AppNavbar() {
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
-                <Navbar.Brand as={Link} to="/home">Enthusiast Car Rentals</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/home">CarMod Collective Car Rentals</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse>
                     <Nav className="ms-auto">

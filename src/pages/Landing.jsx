@@ -25,7 +25,7 @@ export default function Landing() {
                 className="d-flex align-items-center justify-content-center text-white"
             >
                 <Container className="text-center">
-                    <h1 className="display-4 fw-bold mb-3">Enthusiast Car Rentals</h1>
+                    <h1 className="display-4 fw-bold mb-3">CarMod Collective Car Rentals</h1>
                     <p className="lead mb-4">
                         Your garage away from home. Rent performance cars tuned for the road and track.
                     </p>

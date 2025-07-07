@@ -58,7 +58,7 @@ export default function Home() {
 
     return (
         <Container className="py-4">
-            <h2 className="mb-4 text-warning text-center fw-bold">🔥 Enthusiast Car Rentals</h2>
+            <h2 className="mb-4 text-warning text-center fw-bold">🔥 CarMod Collective Car Rentals</h2>
 
             {bookings.length > 0 && (
                 <h3 className="text-muted mb-3">Your bookings:</h3>
